@@ -1,0 +1,94 @@
+$theme-color: #765ac6; // #CFC6E9;
+
+* { box-sizing: border-box; }
+
+body { 
+	font-family: verdana, sans-serif;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+img { max-width: 100%; }
+
+hr { 
+	border:none;
+	border-top:1px solid black;
+}
+
+a { 
+	color: black;
+	transition: color 100ms ease-in;
+	&:hover { color: $theme-color; }
+}
+
+#container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 240px 1fr;
+}
+
+#menu {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+/* blog stuff */
+.post {
+	/*font-family: 'Karla', sans-serif;*/
+	font-size: 1.25em;
+	p { font-size: 1.1em; }
+	grid-column: 2;
+	grid-row: 1;
+
+	.front, .foot {
+		.post-title {  
+			font-size: 1.5em;
+			margin-bottom: 0;
+		}
+		
+		.post-info {
+			margin: 0;
+		}
+		
+		.links { 
+			font-size: 0.75em;
+		}
+
+		.page-link {
+			color: $theme-color;
+		}
+
+		margin-bottom: 1em;
+	}
+	
+	.excerpt {
+		font-size: 0.75em;
+		color: $theme-color;
+		margin-bottom: 1em;
+	}
+
+	.date, .cats {
+		font-size: 0.75em;
+		// font-style: italic;
+		color: $theme-color;
+	}
+	
+	.entry { 
+		// font-family: 'PT Serif', serif;
+		font-size: 1em;
+		max-width: 36em;
+		line-height: 1.75;
+	}
+
+
+	blockquote {
+		background: #efefef;
+		margin: 0;
+		padding: 0.5em 1em;
+	}
+	
+	em { color: $theme-color; }
+}
+

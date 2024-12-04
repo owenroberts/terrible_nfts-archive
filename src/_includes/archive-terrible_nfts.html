@@ -1,0 +1,26 @@
+---
+layout: layout
+---
+
+<div class="post">
+	<div class="front">
+		<p class="post-title" > {{ title }} </p>
+		<div class="date">{{ date | toUTCString }}</div>
+		<div class="links">
+			
+			{% assign previousPost = collections.terrible_nfts| getPreviousCollectionItem: page %}
+			{% assign nextPost = collections.terrible_nfts | getNextCollectionItem: page %}
+
+			{% if previousPost %}
+				<span class="page-link">next:</span> <a class="prev" href="{{ previousPost.url }}">{{ previousPost.data.title }}</a> / 
+			{% endif %}
+
+			{% if nextPost %}
+				<span class="page-link">previous:</span> <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+			{% endif %}
+		</div>
+	</div>
+	<div class="entry">
+		{{ content }}
+	</div>
+</div>

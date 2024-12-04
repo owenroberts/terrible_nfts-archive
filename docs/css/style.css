@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: verdana, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+}
+
+a {
+  color: black;
+  transition: color 100ms ease-in;
+}
+a:hover {
+  color: #765ac6;
+}
+
+#container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+
+#menu {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* blog stuff */
+.post {
+  /*font-family: 'Karla', sans-serif;*/
+  font-size: 1.25em;
+  grid-column: 2;
+  grid-row: 1;
+}
+.post p {
+  font-size: 1.1em;
+}
+.post .front, .post .foot {
+  margin-bottom: 1em;
+}
+.post .front .post-title, .post .foot .post-title {
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+.post .front .post-info, .post .foot .post-info {
+  margin: 0;
+}
+.post .front .links, .post .foot .links {
+  font-size: 0.75em;
+}
+.post .front .page-link, .post .foot .page-link {
+  color: #765ac6;
+}
+.post .excerpt {
+  font-size: 0.75em;
+  color: #765ac6;
+  margin-bottom: 1em;
+}
+.post .date, .post .cats {
+  font-size: 0.75em;
+  color: #765ac6;
+}
+.post .entry {
+  font-size: 1em;
+  max-width: 36em;
+  line-height: 1.75;
+}
+.post blockquote {
+  background: #efefef;
+  margin: 0;
+  padding: 0.5em 1em;
+}
+.post em {
+  color: #765ac6;
+}
+
+/*# sourceMappingURL=style.css.map */
